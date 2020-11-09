@@ -26,7 +26,7 @@ print('Configured')
 print('--> Loading model')
 ret = rknn.load_tflite(model=model_tflite)
 if ret != 0:
-    print('Load mobilenet_v1 failed!')
+    print('Load {} failed!'.format(model_tflite))
     exit(ret)
 print('Loaded')
 
@@ -34,7 +34,7 @@ print('Loaded')
 print('--> Building model')
 ret = rknn.build(do_quantization=True, dataset='./dataset.txt', pre_compile=False)
 if ret != 0:
-    print('Build mobilenet_v1 failed!')
+    print('Build {} failed!'.format(model_tflite))
     exit(ret)
 print('Building completed!')
 
