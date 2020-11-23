@@ -27,3 +27,9 @@ The stdout of the inference as expected
 The making of the tflite model. (see the comment inside)
 Input: the image with size (224,224,3)
 Output: gender, age and race
+
+### `test_rknn.py`:
+The evaluation of FPS
+e.g. `python3 test_rknn.py b0_model_lite.rknn`
+#### Output
+FPS value
