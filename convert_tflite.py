@@ -1,5 +1,5 @@
 # usage: python3 convert_tflite.py b0_model.tflite
-
+# abdadoned
 
 from rknn.api import RKNN
 import sys
